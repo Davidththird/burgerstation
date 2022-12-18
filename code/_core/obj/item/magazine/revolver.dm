@@ -94,3 +94,30 @@
 	size = SIZE_1
 
 	icon_states = 6
+
+/obj/item/magazine/clip/revolver/clip_bullet_357
+	name = "\improper .357 clip"
+	desc = "IT'S NOT A CLIP.... wait it is!!!"
+	desc_extended = "Contains ammunition for a ranged weapon. Make sure you're trying to use the right caliber."
+	icon = 'icons/obj/item/magazine/revolver/chezk.dmi'
+	icon_state = "357"
+	bullet_count_max = 6
+
+	weapon_whitelist = list(
+		/obj/item/weapon/ranged/bullet/revolver/chezk = TRUE
+	)
+
+	ammo = /obj/item/bullet_cartridge/revolver_357
+	ammo_surplus = /obj/item/bullet_cartridge/revolver_357/surplus
+
+	bullet_length_min = 20
+	bullet_length_best = 33
+	bullet_length_max = 35
+
+	bullet_diameter_min = 8.5
+	bullet_diameter_best = 9
+	bullet_diameter_max = 9.5
+
+	size = SIZE_1
+
+	icon_states = 6
